@@ -31,8 +31,8 @@ android {
 }
 
 dependencies {
-    debugImplementation 'io.tixngo.sdk:flutter_debug:7.0'
-    releaseImplementation 'io.tixngo.sdk:flutter_release:7.0'
+    debugImplementation 'io.tixngo.sdk:flutter_debug:8.0'
+    releaseImplementation 'io.tixngo.sdk:flutter_release:8.0'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
@@ -49,15 +49,15 @@ afterEvaluate {
 
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '7.0'
+                version = '8.0'
             }
-            debug(MavenPublication) {
-                from components.debug
-
-                groupId = 'com.github.iOSHiepLe'
-                artifactId = 'TestAndroidSDK-debug'
-                version = '7.0'
-            }
+//            debug(MavenPublication) {
+//                from components.debug
+//
+//                groupId = 'com.github.iOSHiepLe'
+//                artifactId = 'TestAndroidSDK-debug'
+//                version = '7.0'
+//            }
         }
     }
 }
