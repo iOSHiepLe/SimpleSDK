@@ -4,16 +4,16 @@ pluginManagement {
         google()
         mavenCentral()
     }
-    buildscript {
-        repositories {
-            flatDir {
-                dirs 'lib'
-            }
-        }
-        dependencies {
-            classpath fileTree(dir: 'lib', include: '*.jar')
-        }
-    }
+//    buildscript {
+//        repositories {
+//            flatDir {
+//                dirs 'lib'
+//            }
+//        }
+//        dependencies {
+//            classpath fileTree(dir: 'lib', include: '*.jar')
+//        }
+//    }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
