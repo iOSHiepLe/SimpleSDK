@@ -4,6 +4,16 @@ pluginManagement {
         google()
         mavenCentral()
     }
+    buildscript {
+        repositories {
+            flatDir {
+                dirs 'lib'
+            }
+        }
+        dependencies {
+            classpath fileTree(dir: 'lib', include: '*.jar')
+        }
+    }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -15,7 +25,7 @@ dependencyResolutionManagement {
     String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
     repositories {
         maven {
-            url "$rootDir/TestAndroidSDK/src/main/java/com/example/testandroidsdk/androidSdk/host/outputs/repo"
+            url "$rootDir/testandroidsdk/androidSdk/host/outputs/repo"
         }
         maven {
             url "$storageUrl/download.flutter.io"
