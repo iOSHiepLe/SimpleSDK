@@ -31,7 +31,8 @@ android {
 }
 
 dependencies {
-    api fileTree(dir: 'libs', includes: ['*.aar'])
+    compileOnly files('libs/flutter_release-10.0.aar')
+//    api fileTree(dir: 'libs', includes: ['*.aar'])
     //debug
 //    debugApi('io.tixngo.sdk:flutter_debug:10.0'){transitive = true}
 //    releaseApi('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
@@ -90,7 +91,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '20.0'
+                version = '21.0'
             }
         }
     }
