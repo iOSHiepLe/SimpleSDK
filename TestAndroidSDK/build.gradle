@@ -36,7 +36,7 @@ task androidSourcesJar(type: Jar) {
 }
 
 dependencies {
-    api('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
+    api('io.tixngo.sdk:flutter_release:25.0'){transitive = true}
 //    compileOnly files('libs/flutter_release-10.0.aar')
 
     //release
@@ -76,9 +76,9 @@ afterEvaluate {
 
                 artifact androidSourcesJar
 
-//                groupId = 'com.github.iOSHiepLe'
-//                artifactId = 'TestAndroidSDK'
-                version = '24.0'
+                groupId = 'com.github.iOSHiepLe'
+                artifactId = 'TestAndroidSDK'
+                version = '25.0'
             }
         }
     }
