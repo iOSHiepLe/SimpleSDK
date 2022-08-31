@@ -33,8 +33,8 @@ android {
 
 dependencies {
     //debug
-    debugApi('io.tixngo.sdk:flutter_debug:10.0'){transitive = true}
-    releaseApi('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
+//    debugApi('io.tixngo.sdk:flutter_debug:10.0'){transitive = true}
+//    releaseApi('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
 
 //    api('com.example.appsettings:app_settings_debug:10.0') {transitive = true}
 //    api('com.mathrawk.libphonenumber:libphonenumber_debug:10.0'){transitive = true}
@@ -86,11 +86,11 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            mavenAar(MavenPublication) {
+            release(MavenPublication) {
                 from components.release
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '18.0'
+                version = '19.0'
             }
 //            release(MavenPublication) {
 //                from components.release

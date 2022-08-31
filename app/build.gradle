@@ -51,23 +51,23 @@ dependencies {
 //    api('io.tixngo.wallet_suppression:wallet_suppression_debug:10.0'){transitive = true}
 
     //release
-    api('com.example.appsettings:app_settings_release:10.0'){transitive = true}
-    api('com.mathrawk.libphonenumber:libphonenumber_release:10.0'){transitive = true}
-    api('com.tekartik.sqflite:sqflite_release:10.0'){transitive = true}
-    api('com.wongpiwat.trust_location:trust_location_release:10.0'){transitive = true}
-    api('com.xamdesign.safe_device:safe_device_release:10.0'){transitive = true}
-    api('creativemaybeno.wakelock:wakelock_release:10.0'){transitive = true}
-    api('flutter.plugins.contactsservice.contactsservice:contacts_service_release:10.0'){transitive = true}
-    api('io.flutter.plugins.pathprovider:path_provider_android_release:10.0'){transitive = true}
-    api('io.flutter.plugins.sharedpreferences:shared_preferences_android_release:10.0'){transitive = true}
-    api('io.flutter.plugins.urllauncher:url_launcher_android_release:10.0'){transitive = true}
-    api('io.flutter.plugins.videoplayer:video_player_android_release:10.0'){transitive = true}
-    api('io.flutter.plugins.webviewflutter:webview_flutter_android_release:10.0'){transitive = true}
-    api('io.tixngo.beacon:beacon_release:10.0'){transitive = true}
-    api('io.tixngo.core:core_release:10.0'){transitive = true}
-    api('io.tixngo.screenshot_protection:screenshot_protection_release:10.0'){transitive = true}
-    api('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
-    api('io.tixngo.wallet_suppression:wallet_suppression_release:10.0'){transitive = true}
+//    api('com.example.appsettings:app_settings_release:10.0'){transitive = true}
+//    api('com.mathrawk.libphonenumber:libphonenumber_release:10.0'){transitive = true}
+//    api('com.tekartik.sqflite:sqflite_release:10.0'){transitive = true}
+//    api('com.wongpiwat.trust_location:trust_location_release:10.0'){transitive = true}
+//    api('com.xamdesign.safe_device:safe_device_release:10.0'){transitive = true}
+//    api('creativemaybeno.wakelock:wakelock_release:10.0'){transitive = true}
+//    api('flutter.plugins.contactsservice.contactsservice:contacts_service_release:10.0'){transitive = true}
+//    api('io.flutter.plugins.pathprovider:path_provider_android_release:10.0'){transitive = true}
+//    api('io.flutter.plugins.sharedpreferences:shared_preferences_android_release:10.0'){transitive = true}
+//    api('io.flutter.plugins.urllauncher:url_launcher_android_release:10.0'){transitive = true}
+//    api('io.flutter.plugins.videoplayer:video_player_android_release:10.0'){transitive = true}
+//    api('io.flutter.plugins.webviewflutter:webview_flutter_android_release:10.0'){transitive = true}
+//    api('io.tixngo.beacon:beacon_release:10.0'){transitive = true}
+//    api('io.tixngo.core:core_release:10.0'){transitive = true}
+//    api('io.tixngo.screenshot_protection:screenshot_protection_release:10.0'){transitive = true}
+//    api('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
+//    api('io.tixngo.wallet_suppression:wallet_suppression_release:10.0'){transitive = true}
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.0'
