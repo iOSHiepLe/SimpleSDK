@@ -86,15 +86,15 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '12.0'
+                version = '14.0'
             }
 
-            debug(MavenPublication) {
-                from components.debug
-                groupId = 'com.github.iOSHiepLe'
-                artifactId = 'TestAndroidSDK-debug'
-                version = '12.0'
-            }
+//            debug(MavenPublication) {
+//                from components.debug
+//                groupId = 'com.github.iOSHiepLe'
+//                artifactId = 'TestAndroidSDK-debug'
+//                version = '12.0'
+//            }
         }
     }
 }
