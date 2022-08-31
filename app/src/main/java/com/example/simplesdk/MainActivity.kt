@@ -8,6 +8,5 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//        com.example.testandroidsdk.PlusSimple.shared.plusInteger(5,6)
     }
 }
