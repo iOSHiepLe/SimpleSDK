@@ -30,8 +30,8 @@ android {
     }
 }
 
-
 dependencies {
+    api fileTree(dir: 'libs', includes: ['*.aar'])
     //debug
 //    debugApi('io.tixngo.sdk:flutter_debug:10.0'){transitive = true}
 //    releaseApi('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
@@ -90,20 +90,8 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '19.0'
+                version = '20.0'
             }
-//            release(MavenPublication) {
-//                from components.release
-//                groupId = 'com.github.iOSHiepLe'
-//                artifactId = 'TestAndroidSDK'
-//                version = '17.0'
-//            }
-//            debug(MavenPublication) {
-//                from components.debug
-//                groupId = 'com.github.iOSHiepLe'
-//                artifactId = 'TestAndroidSDK-debug'
-//                version = '16.0'
-//            }
         }
     }
 }
