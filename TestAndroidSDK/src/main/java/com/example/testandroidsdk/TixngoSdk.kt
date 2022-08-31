@@ -10,7 +10,6 @@ import io.flutter.plugin.common.MethodChannel
 
 
 class TixngoSdk (context: Context) {
-
     private val flutterEngine = FlutterEngine(context);
 
     private val channel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "io.tixngo.sdk")

@@ -5,6 +5,10 @@ buildscript {
         mavenCentral()
         maven { url 'https://jitpack.io' }
     }
+
+//    dependencies {
+//        classpath('io.tixngo.sdk:flutter_release:10.0')
+//    }
 }
 
 plugins {

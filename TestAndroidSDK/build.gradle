@@ -31,6 +31,7 @@ android {
 }
 
 dependencies {
+    api('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
 //    compileOnly files('libs/flutter_release-10.0.aar')
 
     //release
@@ -50,7 +51,6 @@ dependencies {
 //    api('io.tixngo.core:core_release:10.0'){transitive = true}
 //    api('io.tixngo.screenshot_protection:screenshot_protection_release:10.0'){transitive = true}
 //    api('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
-    api files("$rootDir/androidSdk/host/outputs/repo/io/tixngo/sdk/flutter_release/10.0/flutter_release-10.0.aar")
 //    api('io.tixngo.wallet_suppression:wallet_suppression_release:10.0'){transitive = true}
 
 //    debugImplementation 'io.tixngo.sdk:flutter_debug:10.0'
@@ -70,7 +70,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '22.0'
+                version = '23.0'
             }
         }
     }
