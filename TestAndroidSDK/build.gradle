@@ -33,6 +33,9 @@ android {
 
 dependencies {
     //debug
+    debugApi 'io.tixngo.sdk:flutter_debug:10.0'
+    releaseApi 'io.tixngo.sdk:flutter_release:10.0'
+
 //    api('com.example.appsettings:app_settings_debug:10.0') {transitive = true}
 //    api('com.mathrawk.libphonenumber:libphonenumber_debug:10.0'){transitive = true}
 //    api('com.tekartik.sqflite:sqflite_debug:10.0'){transitive = true}
@@ -72,12 +75,13 @@ dependencies {
 
 //    debugImplementation 'io.tixngo.sdk:flutter_debug:10.0'
 //    releaseImplementation 'io.tixngo.sdk:flutter_release:10.0'
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.5.0'
-    implementation 'com.google.android.material:material:1.6.1'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+//    implementation 'androidx.core:core-ktx:1.7.0'
+//    implementation 'androidx.appcompat:appcompat:1.5.0'
+//    implementation 'com.google.android.material:material:1.6.1'
+//    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
 afterEvaluate {
     publishing {
@@ -86,15 +90,8 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '14.0'
+                version = '15.0'
             }
-
-//            debug(MavenPublication) {
-//                from components.debug
-//                groupId = 'com.github.iOSHiepLe'
-//                artifactId = 'TestAndroidSDK-debug'
-//                version = '12.0'
-//            }
         }
     }
 }
