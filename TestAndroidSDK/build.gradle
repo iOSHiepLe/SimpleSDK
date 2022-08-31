@@ -31,31 +31,9 @@ android {
 }
 
 dependencies {
-    compileOnly files('libs/flutter_release-10.0.aar')
-//    api fileTree(dir: 'libs', includes: ['*.aar'])
-    //debug
-//    debugApi('io.tixngo.sdk:flutter_debug:10.0'){transitive = true}
-//    releaseApi('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
+//    compileOnly files('libs/flutter_release-10.0.aar')
 
-//    api('com.example.appsettings:app_settings_debug:10.0') {transitive = true}
-//    api('com.mathrawk.libphonenumber:libphonenumber_debug:10.0'){transitive = true}
-//    api('com.tekartik.sqflite:sqflite_debug:10.0'){transitive = true}
-//    api('com.wongpiwat.trust_location:trust_location_debug:10.0'){transitive = true}
-//    api('com.xamdesign.safe_device:safe_device_debug:10.0'){transitive = true}
-//    api('creativemaybeno.wakelock:wakelock_debug:10.0'){transitive = true}
-//    api('flutter.plugins.contactsservice.contactsservice:contacts_service_debug:10.0'){transitive = true}
-//    api('io.flutter.plugins.pathprovider:path_provider_android_debug:10.0'){transitive = true}
-//    api('io.flutter.plugins.sharedpreferences:shared_preferences_android_debug:10.0'){transitive = true}
-//    api('io.flutter.plugins.urllauncher:url_launcher_android_debug:10.0'){transitive = true}
-//    api('io.flutter.plugins.videoplayer:video_player_android_debug:10.0'){transitive = true}
-//    api('io.flutter.plugins.webviewflutter:webview_flutter_android_debug:10.0'){transitive = true}
-//    api('io.tixngo.beacon:beacon_debug:10.0'){transitive = true}
-//    api('io.tixngo.core:core_debug:10.0'){transitive = true}
-//    api('io.tixngo.screenshot_protection:screenshot_protection_debug:10.0'){transitive = true}
-//    api('io.tixngo.sdk:flutter_debug:10.0'){transitive = true}
-//    api('io.tixngo.wallet_suppression:wallet_suppression_debug:10.0'){transitive = true}
-//
-//    //release
+    //release
 //    api('com.example.appsettings:app_settings_release:10.0'){transitive = true}
 //    api('com.mathrawk.libphonenumber:libphonenumber_release:10.0'){transitive = true}
 //    api('com.tekartik.sqflite:sqflite_release:10.0'){transitive = true}
@@ -72,6 +50,7 @@ dependencies {
 //    api('io.tixngo.core:core_release:10.0'){transitive = true}
 //    api('io.tixngo.screenshot_protection:screenshot_protection_release:10.0'){transitive = true}
 //    api('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
+    api files("$rootDir/androidSdk/host/outputs/repo/io/tixngo/sdk/flutter_release/10.0/flutter_release-10.0.aar")
 //    api('io.tixngo.wallet_suppression:wallet_suppression_release:10.0'){transitive = true}
 
 //    debugImplementation 'io.tixngo.sdk:flutter_debug:10.0'
@@ -91,7 +70,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '21.0'
+                version = '22.0'
             }
         }
     }
