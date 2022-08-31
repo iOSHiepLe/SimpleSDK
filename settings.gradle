@@ -26,4 +26,3 @@ dependencyResolutionManagement {
 rootProject.name = "SimpleSDK"
 include ':app'
 include ':TestAndroidSDK'
-include ':flutter_release'

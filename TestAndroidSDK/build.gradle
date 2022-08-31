@@ -30,6 +30,11 @@ android {
     }
 }
 
+task androidSourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+    from android.sourceSets.main.java.srcDirs
+}
+
 dependencies {
     api('io.tixngo.sdk:flutter_release:10.0'){transitive = true}
 //    compileOnly files('libs/flutter_release-10.0.aar')
@@ -68,9 +73,12 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.iOSHiepLe'
-                artifactId = 'TestAndroidSDK'
-                version = '23.0'
+
+                artifact androidSourcesJar
+
+//                groupId = 'com.github.iOSHiepLe'
+//                artifactId = 'TestAndroidSDK'
+                version = '24.0'
             }
         }
     }
