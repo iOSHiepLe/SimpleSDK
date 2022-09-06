@@ -33,7 +33,7 @@ android {
 dependencies {
     api 'com.google.firebase:firebase-messaging-ktx:23.0.6'
 //    implementation fileTree(includes: ['*.aar'], dir: 'libs')
-    api 'io.tixngo.sdk:flutter_release:25.0'
+    api 'com.github.iOSHiepLe:testFlutterRelease:1.0'
 //    debugApi 'io.tixngo.sdk:flutter_debug:25.0'
 //    releaseApi 'io.tixngo.sdk:flutter_release:25.0'
 }
@@ -43,11 +43,11 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '32.0'
+                version = '33.0'
             }
+
         }
     }
 }
