@@ -8,7 +8,6 @@ import io.flutter.embedding.engine.FlutterEngineCache
 import io.flutter.embedding.engine.dart.DartExecutor.DartEntrypoint
 import io.flutter.plugin.common.MethodChannel
 
-
 class TixngoSdk (context: Context) {
     private val flutterEngine = FlutterEngine(context);
 

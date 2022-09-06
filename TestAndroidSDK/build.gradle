@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
+//apply plugin: 'kotlin-android'
 
 android {
     compileSdk 32
@@ -30,13 +31,40 @@ android {
     }
 }
 
-task androidSourcesJar(type: Jar) {
-    archiveClassifier.set('sources')
-    from android.sourceSets.main.java.srcDirs
-}
+//allprojects {
+//    repositories {
+//        flatDir {
+//            dirs 'libs'
+//        }
+//    }
+//}
+
 
 dependencies {
-    api('io.tixngo.sdk:flutter_release:25.0'){transitive = true}
+    implementation fileTree(includes: ['*.aar'], dir: 'libs')
+    debugImplementation 'io.tixngo.sdk:flutter_debug:25.0'
+    releaseImplementation 'io.tixngo.sdk:flutter_release:25.0'
+
+//    implementation(name: 'app_settings_release-25.0', ext: 'aar')
+//    implementation(name: 'beacon_release-25.0', ext: 'aar')
+//    implementation(name: 'contacts_service_release-25.0', ext: 'aar')
+//    implementation(name: 'core_release-25.0', ext: 'aar')
+//    implementation(name: 'flutter_release-25.0', ext: 'aar')
+//    implementation(name: 'libphonenumber_release-25.0', ext: 'aar')
+//    implementation(name: 'path_provider_android_release-25.0', ext: 'aar')
+//    implementation(name: 'safe_device_release-25.0', ext: 'aar')
+//    implementation(name: 'screenshot_protection_release-25.0', ext: 'aar')
+//    implementation(name: 'shared_preferences_android_release-25.0', ext: 'aar')
+//    implementation(name: 'sqflite_release-25.0', ext: 'aar')
+//    implementation(name: 'trust_location_release-25.0', ext: 'aar')
+//    implementation(name: 'url_launcher_android_release-25.0', ext: 'aar')
+//    implementation(name: 'video_player_android_release-25.0', ext: 'aar')
+//    implementation(name: 'wakelock_release-25.0', ext: 'aar')
+//    implementation(name: 'wallet_suppression_release-25.0', ext: 'aar')
+//    implementation(name: 'webview_flutter_android_release-25.0', ext: 'aar')
+//    implementation "androidx.core:core-ktx:+"
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    api('io.tixngo.sdk:flutter_release:25.0'){transitive = true}
 //    compileOnly files('libs/flutter_release-10.0.aar')
 
     //release
@@ -73,8 +101,6 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-
-                artifact androidSourcesJar
 
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
