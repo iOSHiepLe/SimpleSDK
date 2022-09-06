@@ -37,6 +37,23 @@ dependencies {
     api 'com.github.iOSHiepLe:flutter_armeabi_v7a:1.0.0'
     api 'com.github.iOSHiepLe:flutter_arm64_v8a:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.5.0'
+
+    api 'com.github.iOSHiepLe:app_setting_release:1.0.0'
+    api 'com.github.iOSHiepLe:beacon:1.0.0'
+    api 'com.github.iOSHiepLe:contactsservice:1.0.0'
+    api 'com.github.iOSHiepLe:core:1.0.0'
+    api 'com.github.iOSHiepLe:libphonenumber:1.0.0'
+    api 'com.github.iOSHiepLe:pathprovider:1.0.0'
+    api 'com.github.iOSHiepLe:safe_device:1.0.0'
+    api 'com.github.iOSHiepLe:screenshot_protection:1.0.0'
+    api 'com.github.iOSHiepLe:sharedpreferences:1.0.0'
+    api 'com.github.iOSHiepLe:sqflite:1.0.0'
+    api 'com.github.iOSHiepLe:trust_location:1.0.0'
+    api 'com.github.iOSHiepLe:urllauncher:1.0.0'
+    api 'com.github.iOSHiepLe:videopalyer:1.0.0'
+    api 'com.github.iOSHiepLe:wakelock:1.0.0'
+    api 'com.github.iOSHiepLe:wallet_suppression:1.0.0'
+    api 'com.github.iOSHiepLe:webviewflutter:1.0.0'
 }
 
 afterEvaluate {
@@ -46,7 +63,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '36.0'
+                version = '37.0'
             }
         }
     }
