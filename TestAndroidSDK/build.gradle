@@ -31,9 +31,10 @@ android {
 }
 
 dependencies {
-    implementation fileTree(includes: ['*.aar'], dir: 'libs')
-    debugImplementation 'io.tixngo.sdk:flutter_debug:25.0'
-    releaseImplementation 'io.tixngo.sdk:flutter_release:25.0'
+    api 'com.google.firebase:firebase-messaging-ktx:23.0.6'
+//    implementation fileTree(includes: ['*.aar'], dir: 'libs')
+//    debugImplementation 'io.tixngo.sdk:flutter_debug:25.0'
+//    releaseImplementation 'io.tixngo.sdk:flutter_release:25.0'
 }
 
 afterEvaluate {
@@ -44,7 +45,7 @@ afterEvaluate {
 
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '28.0'
+                version = '29.0'
             }
         }
     }
