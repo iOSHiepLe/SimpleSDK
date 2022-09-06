@@ -32,7 +32,8 @@ android {
 
 dependencies {
     api 'com.github.iOSHiepLe:testFlutterRelease:1.0'
-    api 'io.flutter:flutter_embedding_debug:1.0.0-e85ea0e79c6d894c120cda4ee8ee10fe6745e187'
+    api 'com.github.iOSHiepLe:flutterEmbedding:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
 }
 
 afterEvaluate {
@@ -42,7 +43,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '34.0'
+                version = '35.0'
             }
         }
     }
