@@ -45,7 +45,7 @@ afterEvaluate {
 
                 groupId = 'com.github.iOSHiepLe'
                 artifactId = 'TestAndroidSDK'
-                version = '29.0'
+                version = '30.0'
             }
         }
     }
